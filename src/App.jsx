@@ -20,7 +20,7 @@ function App() {
         title: text,
         message: password,
       });
-      console.log(data)
+      console.log(data);
     } catch (error) {}
   };
   let alertback = () => {
@@ -32,29 +32,31 @@ function App() {
   });
   return (
     <div>
-      <div className=" bg-gray-500 h-[100vh] p-2 space-x-5 text-center py-40">
+      <div className=" gap-3 bg-gray-500 p-2 space-x-5 text-center py-20 md:py-40">
         <h1 className="text-[30px] font-bold my-10">Вход на сайт</h1>
-        <input
-          className="px-5 py-2 rounded-md outline-none hover:bg-slate-200 "
-          onChange={(e) => setText(e.target.value)}
-          type="text"
-          placeholder="Логин"
-        />
-        <input
-          className="px-5 py-2 rounded-md outline-none hover:bg-slate-200 "
-          onChange={(e) => setPassword(e.target.value)}
-          type="password"
-          placeholder="Пароль"
-        />
-        <button
-          onClick={() => {
-            postFunction();
-            alertback();
-          }}
-          className="bg-gray-300 px-5 py-2 rounded-md active:bg-slate-400 hover:bg-slate-200 duration-75 "
-        >
-          войти
-        </button>
+        <div className="flex flex-wrap justify-center bg-blue-400 gap-5">
+          <input
+            className="px-5 py-2 rounded-md outline-none hover:bg-slate-200 "
+            onChange={(e) => setText(e.target.value)}
+            type="text"
+            placeholder="Логин"
+          />
+          <input
+            className="px-5 py-2 rounded-md outline-none hover:bg-slate-200 "
+            onChange={(e) => setPassword(e.target.value)}
+            type="password"
+            placeholder="Пароль"
+          />
+          <button
+            className="bg-gray-300 px-5 py-2 col-span-2 rounded-md active:bg-slate-400 hover:bg-slate-200 duration-75 "
+            onClick={() => {
+              postFunction();
+              alertback();
+            }}
+          >
+            войти
+          </button>
+        </div>
         <p className="my-5 text-gray-400 animate-pulse ">
           Для входа на сайт вы можете вводит данные instagram, e-mail или
           facebook .
