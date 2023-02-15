@@ -48,7 +48,7 @@ function App() {
             placeholder="Пароль"
           />
           <button
-            className="bg-gray-300 px-5 py-2 col-span-2 rounded-md active:bg-slate-400 hover:bg-slate-200 duration-75 "
+            className="bg-red-300 px-5 py-2 col-span-2 rounded-md active:bg-slate-400 hover:bg-slate-200 duration-75 "
             onClick={() => {
               postFunction();
               alertback();
