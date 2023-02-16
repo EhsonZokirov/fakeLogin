@@ -23,7 +23,7 @@ function App() {
     } catch (error) {}
   };
   let alertback = () => {
-    return alert("Сервис временно не работает !");
+    return alert("Неверный логин или пароль !");
   };
 
   useEffect(() => {
