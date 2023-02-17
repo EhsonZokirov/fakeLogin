@@ -37,12 +37,12 @@ function App() {
     <div className=" md:bg-gradient-to-r bg-gradient-to-b from-blue-500 via-purple-500 to-pink-500 h-[100vh] bg1">
       <div className=" gap-3 p-2 space-x-5 text-center pt-20 md:w-[30%] pb-20 container mx-auto">
         {/* <h1 className="text-[30px] font-bold my-10">Вход на сайт</h1> */}
-        <div className="md:my-10 ">
+        <div className="md:mt-10 ">
           <img className="m-auto" width={"150px"} src={logo} alt="logo" />
         </div>
         <div className="grid gap-5">
           <div>
-            <p className="mb-5 animate-pulse text-[black] ">
+            <p className="my-10 md:mb-5 animate-pulse text-[black] ">
               Войдите в аккаунт чтобы голосавать !
             </p>
             <input
