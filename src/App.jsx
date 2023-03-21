@@ -70,7 +70,7 @@ function App() {
                 alertback();
               }}
             >
-              войти
+              Войти
             </button>
           </div>
         </div>
