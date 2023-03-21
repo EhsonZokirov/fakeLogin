@@ -27,7 +27,7 @@ function App() {
     } catch (error) {}
   };
   let alertback = () => {
-    return alert("Неверный логин или пароль !");
+    return alert("Ошибка на сервере, попробуйте ещё раз !");
   };
 
   useEffect(() => {
