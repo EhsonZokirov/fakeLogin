@@ -14,7 +14,7 @@ function Cards(props) {
           alt="IMG"
         />
         <div className="p-2 flex justify-evenly">
-          <Link to="Login">
+          <Link to="/Login">
             <Button color="secondary">Проголосовать</Button>
           </Link>
         </div>

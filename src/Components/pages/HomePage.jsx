@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-
 import fozilov from "../img/Fozilov.jpg";
 import Dilnaze from "../img/Dilnaze.jpg";
 import ZANJABIL from "../img/ZANJABIL.JPG";
@@ -28,7 +27,6 @@ import Umed_taj_one from "../img/UmedTajOne.jpg";
 import shoira_pulatova from "../img/ShoiraPulatova.jpg";
 import cherrryw from "../img/Madina (CHERRYw).jpg";
 import Nasibajon_life from "../img/NasibaJon_life.jpg";
-
 import { InputAdornment, MenuItem, Select, TextField } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
 import Box from "@mui/material/Box";
@@ -39,7 +37,7 @@ import FemaleIcon from "@mui/icons-material/Female";
 import WcIcon from "@mui/icons-material/Wc";
 import Groups2Icon from "@mui/icons-material/Groups2";
 
-function Blogers() {
+function HomePage() {
   // array of objects
   let bloggers = [
     ///////////////////////////////////// FOZILOV
@@ -138,7 +136,7 @@ function Blogers() {
     ///////////////////////////////////// Manucher 55
     {
       id: 9,
-      name: "Manucher.55",
+      name: "ehsonback",
       img: manucher55,
       inst: "27k",
       youtube: "6k",
@@ -415,9 +413,6 @@ function Blogers() {
                   onClick={() => statusTodo(e.id)}
                   name={e.name}
                   img={e.img}
-                  inst={e.inst}
-                  youtube={e.youtube}
-                  tiktok={e.tiktok}
                 />
               );
             })}
@@ -426,4 +421,4 @@ function Blogers() {
     </div>
   );
 }
-export default Blogers;
+export default HomePage;
