@@ -371,7 +371,7 @@ function Blogers() {
           </div>
           <Box sx={{ minWidth: 120 }}>
             <FormControl fullWidth>
-              <InputLabel id="demo-simple-select-label">Фильтер</InputLabel>
+              <InputLabel id="demo-simple-select-label">Фильтр</InputLabel>
               <Select
                 labelId="demo-simple-select-label"
                 id="demo-simple-select"
