@@ -13,11 +13,11 @@ function Cards(props) {
           src={props.img}
           alt="IMG"
         />
-        <div className="p-2 flex justify-evenly">
-          <Link to="/Login">
-            <Button color="secondary">Проголосовать</Button>
-          </Link>
-        </div>
+        <Link to="/Login">
+          <div className="p-2 flex justify-evenly">
+            <Button color="secondary" >Проголосовать</Button>
+          </div>
+        </Link>
       </li>
     </ul>
   );
